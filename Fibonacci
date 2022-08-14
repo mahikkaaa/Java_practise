@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        int a = 0;
+        int b = 1;
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the number till which you want to print the series: ");
+        int count = 2;
+        int n = input.nextInt();
+        while(count<=n){
+            int temp = b;
+            b=b+a;
+            a=temp;
+            count++;
+        }
+        System.out.println(b);
+        
+    }
+        
+        
+        }
+
+
+    
