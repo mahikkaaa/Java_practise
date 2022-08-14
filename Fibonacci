@@ -1,3 +1,4 @@
+#WHILE LOOP
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
@@ -21,4 +22,22 @@ public class Main {
         }
 
 
+#FOR LOOP
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        int a =0;
+        int b=1;
+        int count=2;
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the number till which fibonacci has to be printed : ");
+        int n = input.nextInt();
+        for(int i = count; i<=n; i++){
+            int temp=b;
+            b=b+a;
+            a=temp;
+        }
+    System.out.println(b);    
+    }
     
+}
