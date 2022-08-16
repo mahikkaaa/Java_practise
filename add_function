@@ -40,3 +40,25 @@ public class Main{
             
     
 }
+
+
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        System.out.println("enter your name : ");
+        Scanner input=new Scanner(System.in);
+        String name = input.next();
+        
+        String output = greet(name);
+        System.out.println(output);
+        
+        
+        
+    }
+    
+    static String greet(String naam){
+        String message = "Hello " + naam;
+        return message;
+    }
+}
